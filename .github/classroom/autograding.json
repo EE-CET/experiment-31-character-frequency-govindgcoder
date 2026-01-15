@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/CharFrequency.java",
+      "run": "java -cp src CharFrequency",
+      "input": "Hello World\nl",
+      "output": "3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Case Sensitive Check",
+      "setup": "javac src/CharFrequency.java",
+      "run": "java -cp src CharFrequency",
+      "input": "Java Programming\nj",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Character String",
+      "setup": "javac src/CharFrequency.java",
+      "run": "java -cp src CharFrequency",
+      "input": "A\nA",
+      "output": "1",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "No Occurrence",
+      "setup": "javac src/CharFrequency.java",
+      "run": "java -cp src CharFrequency",
+      "input": "Testing\nz",
+      "output": "0",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
